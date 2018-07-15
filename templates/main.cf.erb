@@ -761,6 +761,12 @@ smtpd_tls_ask_ccert = yes
 <% if @tls_append_default_CA -%>
 tls_append_default_CA = yes
 <% end -%>
+<% if @smtpd_tls_auth_only -%>
+smtpd_tls_auth_only = yes
+<% end -%>
+<% if @smtpd_tls_received_header -%>
+smtpd_tls_received_header = yes
+<% end -%>
 
 <% end -%>
 <% if @smtpd_sasl_auth -%>
@@ -875,6 +881,9 @@ dovecot_destination_recipient_limit = 1
 <% end -%>
 <% end -%>
 # SMTP restrictions (block bogus stuff)
+<% if @strict_rfc821_envelopes -%>
+strict_rfc821_envelopes = yes
+<% end -%>
 <% if @smtpd_helo_required -%>
 smtpd_helo_required = yes
 <% end -%>
