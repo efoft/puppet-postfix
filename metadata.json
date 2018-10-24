@@ -1,12 +1,10 @@
 {
-  "name": "thias-postfix",
-  "version": "0.3.4",
-  "author": "Matthias Saou",
+  "name": "efoft-postfix",
+  "version": "0.3.5",
+  "author": "efoft",
   "license": "Apache-2.0",
-  "summary": "Postfix Mail Transport Agent module",
-  "source": "git://github.com/thias/puppet-postfix",
-  "project_page": "https://github.com/thias/puppet-postfix",
-  "issues_url": "https://github.com/thias/puppet-postfix/issues",
+  "summary": "Postfix Mail Transport Agent module forked from thias-postfix",
+  "source": "git://github.com/efoft/puppet-postfix",
   "tags": [ "mta", "smtp", "mail" ],
   "operatingsystem_support": [
     {
